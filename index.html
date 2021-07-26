@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>
+            CLASSIFIED INFORMATION ON [REDACTED] FROM THE [REDACTED]
+        </title>
+    </head>
+    <body>
+        <h1>
+            THIS IS CLASSIFIED INFORMATION
+        </h1>
+        <h1 id="creds">
+            ENTER YOUR CREDENTIALS TO VERIFY YOUR IDENTITY
+        </h1>
+        <div>
+            <h3>Password: </h3>
+            <input id="pass" type="password">
+        </div>
+        <div>
+            <h3>Name: </h3>
+            <input id="name" type="password">
+        </div>
+        <div>
+            <h3>Military Rank: </h3>
+            <input id="rank" type="password">
+        </div>
+        <div>
+            <h3>Military Branch: </h3>
+            <input id="branch" type="password">
+        </div>
+        <div>
+            <h3>Social Security Number: </h3>
+            <input id="ssn" type="password">
+        </div>
+        <button id="now" type="button" onclick="check_text(), check_text()">Verify Information</button>
+        <button id="checkcomp" type="button" onclick="change_text()">Verify Computer</button>
+        <br>
+        <p id="plz">
+            *SYSTEM WILL NOT ACCECPT THE CREDENTIALS UNLESS YOU VERIFY DEVICE
+        </p>
+        <script>
+            function change_text(){        
+                document.getElementById("plz").innerHTML = "THE DECECTED DEVICE DOES NOT HAVE ACCESS TO THIS INFORMATION.";
+                    document.getElementById("output").style.color = 'red';
+            }
+            function check_text()
+            {
+                if(document. getElementById("pass"). value. length == 0)
+                {
+                    alert("PLEASE ENTER YOUR ACCOUNT PASSWORD")
+                }
+
+                if(document. getElementById("name"). value. length == 0)
+                {
+                    alert("PLEASE ENTER YOUR ACCOUNT USERNAME AND/OR NAME")
+                }
+
+                if(document. getElementById("rank"). value. length == 0)
+                {
+                    alert("PLEASE ENTER YOUR MILITARY RANK")
+
+                if(document. getElementById("branch"). value. length == 0)
+                {
+                    alert("PLEASE ENTER THE BRANCH OF THE MILITARY YOU ARE IN")
+                }
+
+                if(document. getElementById("ssn"). value. length == 0)
+                {
+                    alert("PLEASE ENTER YOUR SOCIAL SECURITY NUMBER")
+                }
+
+                }
+            }
+        </script>
+    </body>
+</html>
